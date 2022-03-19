@@ -8,10 +8,10 @@ const Header = () => {
   };
 
   return (
-    <div className="Header">
+    <div className={`Header ${darkMode && 'dark-mode'}`}>
       <h1>React Hooks</h1>
       <button type="button" onClick={handleClick}>
-      {darkMode ? 'Dark Mode' : 'Light Mode'}
+      {!darkMode ? 'Dark Mode' : 'Light Mode'}
       </button>
     </div>
   );
